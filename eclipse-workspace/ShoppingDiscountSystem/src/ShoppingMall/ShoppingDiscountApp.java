@@ -13,7 +13,6 @@ public class ShoppingDiscountApp {
 		double finalPrice=0.0;
 		double result=0.0;
 		
-		
 		int i=0;
 		do
 		{
