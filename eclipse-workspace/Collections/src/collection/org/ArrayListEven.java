@@ -34,7 +34,7 @@ public class ArrayListEven {
 		for (int i = 0; i < List.size(); i++) {
 
 			System.out.println(List.get(i));
-
+			
 		}
 
 		// using for each loop
