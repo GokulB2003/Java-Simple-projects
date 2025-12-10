@@ -19,6 +19,8 @@ public static void main(String argsp[])
 	arr.add(40);
 	arr.add(90);
 	arr.add(30);
+	Collections.sort(arr);
+	
 	for(Object obj:arr)
 	{
 		int abc=(int)obj;
@@ -28,15 +30,55 @@ public static void main(String argsp[])
 		}
 		
 	}
+
+	int j=0;
+	int count=1;
+/*	for(int i=1; i<arr.size(); i++)
+	{
+
+		if(arr.get(i).equals(arr.get(i-1)))
+		{
+			count++;
+		}
+		else
+		{
+			System.out.println("the frequency of the  :"+arr.get(i-1)+":\t"+count);
+			count=1;
+			
+		}
+			
+	}
+	System.out.println("the frequency of the  :"+arr.get(arr.size()-1)+":\t"+count);
+	*/
+	System.out.println("the unique element is:");
 	ListIterator li=newArr.listIterator();
-	/*while(li.hasNext())
+	while(li.hasNext())
 	{
 		Object a=li.next();
 		System.out.println(a);
-	}*/
-	for(Object obj:newArr)
+	}
+	/*for(Object obj:newArr)
 	{
 		System.out.println(obj);
+	}*/
+	for(int i=0; i<newArr.size(); i++)
+	{
+		int k=0;
+		count=0;
+		while(k<arr.size())
+		{
+			if(arr.get(k)==newArr.get(i))
+			{
+				count++;
+			}
+			k++;
+			
+		}
+		System.out.println("count of:"+newArr.get(i)+":\t"+count);
+		
 	}
+	
+	
+	
 }
 }
