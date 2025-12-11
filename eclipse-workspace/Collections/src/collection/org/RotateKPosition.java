@@ -1,10 +1,7 @@
 package collection.org;
 /*Given an ArrayList and a value k, rotate the list to the right by k positions:
+/*Given an ArrayList and a value k, rotate the list to the right by k positions:
  Example: [1,2,3,4,5], k=2 → [3,4,5,1,2]
-What you practice:
-Modular arithmetic
-Using temporary lists
-Index manipulation
 */
 import java.util.*;
 public class RotateKPosition {
@@ -20,7 +17,7 @@ public class RotateKPosition {
 		arr.add(5);
 		
 		rotateArr(arr,0,arr.size()-1);
-		rotateArr(arr,0,k);
+		rotateArr(arr,0,k-1);
 		rotateArr(arr,k,arr.size()-1);
 		printArr(arr);
 			
@@ -30,7 +27,7 @@ public class RotateKPosition {
 	{
 		while(s<e)
 		{
-			Object temp=s;
+			Object temp=arr.get(s);
 			arr.set(s, arr.get(e));
 			arr.set(e, temp);
 			
