@@ -13,7 +13,7 @@ public class MergeIntervals {
 	Scanner sc=new Scanner(System.in);
 	public static void main(String args[])
 	{
-		ArrayList<ArrayList<Integer>>arr=new ArrayList<>();
+		ArrayList<ArrayList>arr=new ArrayList<>();
 		ArrayList row1=new ArrayList();
 		row1.add(1);
 		row1.add(3);
@@ -36,14 +36,14 @@ public class MergeIntervals {
 		arr.add(row3);
 		arr.add(row4);
 		
+		
+		
+		
 		for(int i=0; i<arr.size(); i++)
 		{
 			for(int j=0; j<arr.get(i).size(); j++)
 			{
 				System.out.print(arr.get(i).get(j)+" ");
-			
-				
-				
 			}
 			System.out.println();
 		}
