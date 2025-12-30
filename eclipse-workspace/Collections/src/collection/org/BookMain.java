@@ -25,6 +25,7 @@ public class BookMain {
 		}
 		//display
 		Iterator i=v.iterator();
+		System.out.println("ID\t\t"+"Name:\t"+"Author\t");
 		while(i.hasNext())
 		{
 			Object obj=i.next();
